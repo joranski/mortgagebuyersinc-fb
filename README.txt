@@ -54,6 +54,27 @@
     };
   d) # ng build
   e) # firebase init
+    1) ? Please select an option: (Use arrow keys) > Use an existing project
+    NOTE YOU WILL NEED TO SET UP DATABASE AND STORAGE SERVER LOCATIONS!!!!
+    2) 
+    ? What language would you like to use to write Cloud Functions? TypeScript
+    ? Do you want to use TSLint to catch probable bugs and enforce style? Yes
+    ? Do you want to install dependencies with npm now? Yes
+    !!!!!!! BELOW
+    ? What do you want to use as your public directory? (public) CHANGE TO ----> dist/<projectName>
+    ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) Yes
+    ? File dist/swm-firebase-fe/index.html already exists. Overwrite? (y/N) YES
+    === Emulators Setup
+    ? Which Firebase emulators do you want to set up? Press Space to select emulators, then Enter to confirm your choices. 
+
+    (*) Functions
+    ( ) Firestore
+    ( ) Database
+    ( ) Hosting
+    >(*) Pubsub
+
+    ? Would you like to download the emulators now? (y/N) YES
+    
   f) FIREBASE BUG.... since you might not have a function but you probably included it you will need to comment out first line in ./functions/src/index.ts
   <OPTIONAL> EDIT ./storage.rules
       ADD TO TOP OF FILE>       rules_version = '2';
