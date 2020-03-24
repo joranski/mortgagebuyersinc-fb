@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDVGoxNXc_sHDhjFT_ynAgqnqm9Nzybdd8",
+    authDomain: "mortgagebuyersinc-6b9ea.firebaseapp.com",
+    databaseURL: "https://mortgagebuyersinc-6b9ea.firebaseio.com",
+    projectId: "mortgagebuyersinc-6b9ea",
+    storageBucket: "mortgagebuyersinc-6b9ea.appspot.com",
+    messagingSenderId: "873356162084",
+    appId: "1:873356162084:web:ea35cd9a26edeab79a14b1",
+    measurementId: "G-FPY3ZJYCFT"
+  }
 };
 
 /*
