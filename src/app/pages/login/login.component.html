@@ -1,0 +1,37 @@
+<div class="login-wrapper">
+    <div class="login">
+        <section class="title">
+            <h3 class="welcome">Welcome to</h3>
+            Katoomi Vendor
+            <h5 class="hint">Email must be associated with an active vendor account.</h5>
+        </section>
+        <form #form="ngForm" (ngSubmit)="login(form.value)" class="login-group">
+            <clr-input-container>
+                <label class="clr-sr-only">E-Mail</label>
+                <input clrInput placeholder="E-Mail" type="text" name="email" required [(ngModel)]="email"> />
+            </clr-input-container>
+            <clr-password-container>
+                <label class="clr-sr-only">Password</label>
+                <input type="password" clrPassword required type="password" name="password" [(ngModel)]="password" placeholder="Password"/>
+            </clr-password-container>
+            <clr-checkbox-wrapper>
+                <label>Remember me</label>
+                <input type="checkbox" name="rememberMe" clrCheckbox />
+            </clr-checkbox-wrapper>
+
+            <button type="submit" class="btn btn-primary" [disabled]="loadingIndicator">SIGN IN
+                <span *ngIf="loadingIndicator" class="spinner spinner-sm spinner-align"></span>
+            </button>
+            <span style="padding:10px; text-align: center;">
+                <a [routerLink]="['/register']" class="signup">Sign Up</a>
+                |
+                <a [routerLink]="['/forgot-password']" class="signup">Forgot Password</a>
+            </span>
+
+        </form>
+    </div>
+</div>
+
+
+
+
